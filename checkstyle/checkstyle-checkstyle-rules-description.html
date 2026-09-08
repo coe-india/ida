@@ -1,0 +1,2437 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.16.5 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Checkstyle Rules Description - IBM Deployment Accelerator for Business Automation Workflow (IDA) Docs</title>
+<meta name="description" content="Checkstyle Rules Description">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="IBM Deployment Accelerator for Business Automation Workflow (IDA) Docs">
+<meta property="og:title" content="Checkstyle Rules Description">
+<meta property="og:url" content="../checkstyle/checkstyle-checkstyle-rules-description.html">
+
+
+  <meta property="og:description" content="Checkstyle Rules Description">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2018-04-09T23:29:00+08:00">
+
+
+
+  <meta property="article:modified_time" content="2025-12-13T00:00:00+08:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="../checkstyle/checkstyle-checkstyle-rules-description.html">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": null,
+      "url": null,
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="../feed.xml" type="application/atom+xml" rel="alternate" title="IBM Deployment Accelerator for Business Automation Workflow (IDA) Docs Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="../assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600%7CIBM+Plex+Serif:300,400,500%7CIBM+Plex+Mono:300,400,500,700" rel="stylesheet">
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="../index.html">
+          IBM Deployment Accelerator for Business Automation Workflow (IDA) Docs
+          
+        </a>
+        <ul class="visible-links"></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <span class="nav__sub-title">Installation</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../installation/installation-release-notes.html" class="">Release Notes</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../installation/installation-system-requirement.html" class="">System Requirements</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../installation/installation-installing-ida-application-java17.html" class="">Installing IDA Application on Java 17</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Tutorial</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../tutorial/tutorial-create-a-test-project-and-generate-test-cases.html" class="">Task 1: Create a Test Project and Generate Test Cases</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../tutorial/tutorial-record-replay-and-run-a-test-case.html" class="">Task 2: Record, Replay and Run a Test Case</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../tutorial/tutorial-set-up-checkstyle.html" class="">Task 3: Set up Checkstyle</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../tutorial/tutorial-create-a-pipeline-for-continuous-deployment.html" class="">Task 4: Create a Pipeline for Continuous Deployment</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../tutorial/tutorial-summary.html" class="">Summary</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Test</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../test/test-test-project-management.html" class="">Test Project Management</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../test/test-test-case-management.html" class="">Test Case Management</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../test/test-test-case-label-management.html" class="">Test Case Label Management</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../test/test-test-case-data-binding.html" class="">Test Case Data Binding</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../test/test-test-case-data-dynamic-loading.html" class="">Test Case Data Dynamic Loading</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../test/test-group-command-management.html" class="">Group Command Management</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../test/test-record-and-replay-a-test-case.html" class="">Record and Replay a Test Case</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../test/test-write-javascript-command.html" class="">Write a JavaScript Command</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../test/test-write-java-command.html" class="">Write a Java Command</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../test/test-test-smart-comparison.html" class="">Test Smart Comparison</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../test/test-import-execute-sample-test-project.html" class="">Import and Execute Sample Test Project</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../test/test-run-load-test.html" class="">Run Load Test</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../test/test-test-report.html" class="">Test Report</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../test/test-dynamic-user-assignment.html" class="">Dynamic User Assignment</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../test/test-custom-ootb-command.html" class="">Custom OOTB Command</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Checkstyle</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../checkstyle/checkstyle-analyze-workflow-projects-with-checkstyle.html" class="">Analyze Workflow Projects with Checkstyle</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../checkstyle/checkstyle-customize-checkstyle-rules.html" class="">Customize Checkstyle Rules</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../checkstyle/checkstyle-checkstyle-report.html" class="">Checkstyle Report</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../checkstyle/checkstyle-deploy-checkstyle-ruleset.html" class="">Deploy Checkstyle Ruleset</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../checkstyle/checkstyle-checkstyle-rules-description.html" class="active">Checkstyle Rules Description</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../checkstyle/checkstyle-odm-or-embedded-rules-upgrade.html" class="">Checkstyle ODM/Embedded Rules Upgrade</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Snapshot Comparison</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../snapshot-comparison/snapshot-comparison-compare-snapshots.html" class="">Compare Snapshots</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../snapshot-comparison/snapshot-comparison-snapshot-comparison-report.html" class="">Snapshot Comparison Report</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../snapshot-comparison/snapshot-comparison-merge-snapshots.html" class="">Merge Snapshots</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../snapshot-comparison/snapshot-comparison-snapshot-merge-report.html" class="">Snapshot Merge Report</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Analyzer</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../analyzer/analyzer-analyze-workflow-projects-with-analyzer-statistic.html" class="">Analyze Workflow Projects with Analyzer Statistics</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../analyzer/analyzer-analyze-workflow-projects-with-analyzer-toolkit-references.html" class="">Analyze Workflow Projects with Analyzer Toolkit References</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../analyzer/analyzer-statistic-report.html" class="">Analyzer - Statistical Report</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../analyzer/analyzer-toolkit-references-report.html" class="">Analyzer - Toolkit References Report</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Search</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../search/search-search-workflow-projects.html" class="">Search Workflow Projects</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Pipeline</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../pipeline/pipeline-pipeline-overview.html" class="">Pipeline Overview</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../pipeline/pipeline-create-a-pipeline-for-continuous-deployment.html" class="">Create a Pipeline for Continuous Deployment</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../pipeline/pipeline-deploy-snapshot-from-pc-to-ps.html" class="">Deploy Snapshot from PC to PS</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../pipeline/pipeline-pipeline-script.html" class="">Pipeline Script</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../pipeline/pipeline-pipeline-email-notification.html" class="">Pipeline Email Notification</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../pipeline/pipeline-pipeline-report.html" class="">Pipeline Report</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../pipeline/pipeline-toolkit-deployment.html" class="">Toolkit Deployment</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../pipeline/pipeline-approve-and-resume-pipeline-build.html" class="">Approve and Resume Pipeline Build</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../pipeline/pipeline-pipeline-stage&step-reference.html" class="">Pipeline Stage & Step Reference</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Operations Tool</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../operations/operations-operations-tool.html" class="">Operations Tool</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Administration</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../administration/administration-users-management.html" class="">User Management</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../administration/administration-team-configuration.html" class="">Team Manangement</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../administration/administration-role-management.html" class="">Role Manangement</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../administration/administration-baw-configuration.html" class="">BAW Configuration</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../administration/administration-ssh-configuration.html" class="">SSH Configuration</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../administration/administration-case-solution-deployment-configuration.html" class="">Case Solution Deployment Configuration</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../administration/administration-selenium-hub-configuration.html" class="">Selenium Hub Configuration</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../administration/administration-checkstyle-rule-configuration.html" class="">Checkstyle Rule Configuration</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../administration/administration-custom-recorder.html" class="">Custom Recorder</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../administration/administration-resources.html" class="">Resources</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../administration/administration-start-and-stop-ida-environment.html" class="">Start and Stop IDA Environment</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../administration/administration-settings-configuration.html" class="">Settings Configuration</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">References</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../references/references-architecture.html" class="">Architecture</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../references/references-test-command.html" class="">Test Commands</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../references/references-javascript-api.html" class="">JavaScript API</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../references/references-ida-rest-apis.html" class="">IDA REST APIs</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../references/references-operations.html" class="">Operations</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../references/references-ida-plugin.html" class="">IDA Plug-in</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../references/references-performance-test.html" class="">Performance Test</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../references/references-previous-release-notes.html" class="">Previous Release Notes</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Trouble Shooting</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../troubleshooting/troubleshooting-known-limitation.html" class="">Known Limitations</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../troubleshooting/troubleshooting-frequently-asked-questions.html" class="">Frequently Asked Questions</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Checkstyle Rules Description">
+    <meta itemprop="description" content="Checkstyle Rules Description">
+    <meta itemprop="datePublished" content="April 09, 2018">
+    <meta itemprop="dateModified" content="December 12, 2025">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <!-- <h1 id="page-title" class="page__title" itemprop="headline">Checkstyle Rules Description
+</h1> -->
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#checkstyle-rules-description">Checkstyle Rules Description</a>
+    <ul>
+      <li><a href="#threshold">Threshold</a></li>
+      <li><a href="#app">App</a></li>
+      <li><a href="#business-object">Business Object</a></li>
+      <li><a href="#case-solution">Case Solution</a></li>
+      <li><a href="#case-type">Case Type</a></li>
+      <li><a href="#coach-view">Coach View</a></li>
+      <li><a href="#migration">Migration</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#service">Service</a></li>
+      <li><a href="#variable">Variable</a></li>
+      <li><a href="#web-service">Web Service</a></li>
+    </ul>
+  </li>
+</ul>
+            </nav>
+          </aside>
+        
+        <h1 id="checkstyle-rules-description">Checkstyle Rules Description</h1>
+<hr />
+
+<h2 id="threshold">Threshold</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Threshold</th>
+      <th style="text-align: left">Default Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">TOOLKIT_THRESHOLD</td>
+      <td style="text-align: left">25</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">ADVANCED_INTEGRATION_SERVIE_THRESHOLD</td>
+      <td style="text-align: left">25</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">AJAX_SERVIE_THRESHOLD</td>
+      <td style="text-align: left">25</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">DECISION_SERVICE_THRESHOLD</td>
+      <td style="text-align: left">25</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">GENERAL_SYSTEM_SERVICE_THRESHOLD</td>
+      <td style="text-align: left">50</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">INTEGRATION_SERVICE_THRESHOLD</td>
+      <td style="text-align: left">25</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">HUMAN_SERVICE_THRESHOLD</td>
+      <td style="text-align: left">50</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">SERVICE_FLOW_THRESHOLD</td>
+      <td style="text-align: left">50</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WEB_SERVICE_THRESHOLD</td>
+      <td style="text-align: left">25</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">BPD_THRESHOLD</td>
+      <td style="text-align: left">15</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">REPORT_THRESHOLD</td>
+      <td style="text-align: left">15</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UNDERCOVER_AGENT_THRESHOLD</td>
+      <td style="text-align: left">25</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">SERVICE_LEVEL_AGREEMENT_THRESHOLD</td>
+      <td style="text-align: left">15</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">BUSINESS_OBJECT_THRESHOLD</td>
+      <td style="text-align: left">50</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">ENVIRONMENT_VARIABLE_THRESHOLD</td>
+      <td style="text-align: left">25</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">EXPOSED_PROCESS_VARIABLE_THRESHOLD</td>
+      <td style="text-align: left">25</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">COACH_THRESHOLD</td>
+      <td style="text-align: left">25</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">NESTED_CSHS_THRESHOLD</td>
+      <td style="text-align: left">25</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">INPUT_VARIABLE_THRESHOLD</td>
+      <td style="text-align: left">15</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">OUTPUT_VARIABLE_THRESHOLD</td>
+      <td style="text-align: left">15</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">NESTED_TOOLKIT_LEVEL_THRESHOLD</td>
+      <td style="text-align: left">4</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">TOOLKIT_SIZE_THRESHOLD</td>
+      <td style="text-align: left">50000000</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">JAVASCRIPT_LINES_MEDIUM_THRESHOLD</td>
+      <td style="text-align: left">100</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">JAVASCRIPT_LINES_HIGH_THRESHOLD</td>
+      <td style="text-align: left">300</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">SEARCHABLE_FIELD_THRESHOLD</td>
+      <td style="text-align: left">25</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">ATTRIBUTE_THRESHOLD</td>
+      <td style="text-align: left">50</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">COACH_CONTROL_THRESHOLD</td>
+      <td style="text-align: left">500</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="app">App</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Rule</th>
+      <th>Level</th>
+      <th>Description</th>
+      <th>Advice</th>
+      <th>Tags</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>check-app-too-many-toolkit</td>
+      <td>MAJOR</td>
+      <td>Check the total number of the toolkits in the application to ensure it is not more than 25.</td>
+      <td>A process application that includes a large number of toolkits will have runtime performance issues. Avoid deeply nested toolkit hierarchy (toolkits that include toolkits that include toolkits…). Create toolkits as per logical domains instead of creating one huge toolkit, and prior to deployment create temporary toolkits that contain only the artifacts actually used in your process application.</td>
+      <td>Performance</td>
+    </tr>
+    <tr>
+      <td>check-app-with-mismatch-version-toolkits</td>
+      <td>CRITICAL</td>
+      <td>Check if the application has mismatched version toolkits.</td>
+      <td>Toolkits version mismatch may lead to functionality missing or runtime errors.</td>
+      <td>Implementation</td>
+    </tr>
+    <tr>
+      <td>check-app-with-too-many-advancedintegrationservice</td>
+      <td>MINOR</td>
+      <td>Check the total number of the integration services in the process application to ensure it is not more than 25.</td>
+      <td>For maintenance purposes, smart folders can be created to manage so many (more than 25) integration services.</td>
+      <td>Maintenance</td>
+    </tr>
+    <tr>
+      <td>check-app-with-too-many-ajaxservice</td>
+      <td>MINOR</td>
+      <td>Check the total number of the ajax services in the process application to ensure it is not more than 25.</td>
+      <td>For maintenance purposes, smart folders can be created to manage so many (more than 25) ajax services.</td>
+      <td>Maintenance</td>
+    </tr>
+    <tr>
+      <td>check-app-with-too-many-bpd</td>
+      <td>MINOR</td>
+      <td>Check the total number of the BPDs in the process application to ensure it is not more than 15.</td>
+      <td>For maintenance purposes, smart folders can be created to manage so many (more than 15) BPDs.</td>
+      <td>Maintenance</td>
+    </tr>
+    <tr>
+      <td>check-app-with-too-many-businessobject</td>
+      <td>MINOR</td>
+      <td>Check the total number of the business objects in the process application to ensure it is not more than 50.</td>
+      <td>For maintenance purposes, smart folders can be created to manage so many (more than 50) business objects.</td>
+      <td>Maintenance</td>
+    </tr>
+    <tr>
+      <td>check-app-with-too-many-decisionservice</td>
+      <td>MINOR</td>
+      <td>Check the total number of the decision services in the process application to ensure it is not more than 25.</td>
+      <td>For maintenance purposes, smart folders can be created to manage so many (more than 25) decision services.</td>
+      <td>Maintenance</td>
+    </tr>
+    <tr>
+      <td>check-app-with-too-many-environmentvariableset</td>
+      <td>MINOR</td>
+      <td>Check the total number of the environment variable sets in the process application to ensure it is not more than 25.</td>
+      <td>For maintenance purposes, keep only what is needed to reduce so many (more than 25) environment variable sets.</td>
+      <td>Maintenance</td>
+    </tr>
+    <tr>
+      <td>check-app-with-too-many-exposedprocess-variable</td>
+      <td>MINOR</td>
+      <td>Check the total number of the exposed processes in the process application to ensure it is not more than 25.</td>
+      <td>For maintenance purposes, keep only what is needed to reduce so many (more than 25) exposed process variables.</td>
+      <td>Maintenance</td>
+    </tr>
+    <tr>
+      <td>check-app-with-too-many-generalsystemservice</td>
+      <td>MINOR</td>
+      <td>Check the total number of the general system services in the process application to ensure it is not more than 50.</td>
+      <td>For maintenance purposes, smart folders can be created to manage so many (more than 50) general system services.</td>
+      <td>Maintenance</td>
+    </tr>
+    <tr>
+      <td>check-app-with-too-many-humanservice</td>
+      <td>MINOR</td>
+      <td>Check the total number of the human services in the process application to ensure it is not more than 50.</td>
+      <td>For maintenance purposes, smart folders can be created to manage so many (more than 50) human services.</td>
+      <td>Maintenance</td>
+    </tr>
+    <tr>
+      <td>check-app-with-too-many-integrationservice</td>
+      <td>MINOR</td>
+      <td>Check the total number of the integration services in the process application to ensure it is not more than 25.</td>
+      <td>For maintenance purposes, smart folders can be created to manage so many (more than 25) integration services.</td>
+      <td>Maintenance</td>
+    </tr>
+    <tr>
+      <td>check-app-with-too-many-report</td>
+      <td>MINOR</td>
+      <td>Check the total number of the reports in the process application to ensure it is not more than 15.</td>
+      <td>For maintenance purposes, smart folders can be created to manage so many (more than 15) reports.</td>
+      <td>Maintenance</td>
+    </tr>
+    <tr>
+      <td>check-app-with-too-many-serviceflow</td>
+      <td>MINOR</td>
+      <td>Check the total number of the service flows in the process application to ensure it is not more than 50.</td>
+      <td>For maintenance purposes, smart folders can be created to manage so many (more than 50) service flows.</td>
+      <td>Maintenance</td>
+    </tr>
+    <tr>
+      <td>check-app-with-too-many-servicelevelagreement</td>
+      <td>MINOR</td>
+      <td>Check the total number of the service level agreements in the process application to ensure it is not more than 15.</td>
+      <td>For maintenance purposes, smart folders can be created to manage so many (more than 15) service level agreements.</td>
+      <td>Maintenance</td>
+    </tr>
+    <tr>
+      <td>check-app-with-too-many-undercoveragent</td>
+      <td>MINOR</td>
+      <td>Check the total number of the under coveragents in the process application to ensure it is not more than 25.</td>
+      <td>For maintenance purposes, smart folders can be created to manage so many (more than 25) under coveragents.</td>
+      <td>Maintenance</td>
+    </tr>
+    <tr>
+      <td>check-app-with-too-many-webservice</td>
+      <td>MINOR</td>
+      <td>Check the total number of the webservices in the process application to ensure it is not more than 25.</td>
+      <td>For maintenance purposes, smart folders can be created to manage so many (more than 25) webservices.</td>
+      <td>Maintenance</td>
+    </tr>
+    <tr>
+      <td>check-toolkit-nested-level</td>
+      <td>MAJOR</td>
+      <td>Check the level of the nested toolkit in the process application to ensure it is not more than 4</td>
+      <td>Do not have deeply nested toolkit hierarchy. Please check the level of the toolkit hierarchy.</td>
+      <td>Performance</td>
+    </tr>
+    <tr>
+      <td>check-app-toolkit-size</td>
+      <td>MAJOR</td>
+      <td>Check the size of every toolkit in the application and ensure it is not more than 50MB</td>
+      <td>Keep the toolkit sizes small, please check the size of the toolkits.</td>
+      <td>Performance</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="business-object">Business Object</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Rule</th>
+      <th>Level</th>
+      <th>Description</th>
+      <th>Advice</th>
+      <th>Tags</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>check-businessobject-documentation</td>
+      <td>MINOR</td>
+      <td>Check the documentation in the business object to ensure it is not empty.</td>
+      <td>For maintenance purposes, a documentation or description for each BPM artifact is necessary. A well-described artifact can be very helpful for users to have a better understanding of the artifact. It is strongly recommended that a documentation or description be set for each artifact.</td>
+      <td>Documentation</td>
+    </tr>
+    <tr>
+      <td>check-businessobject-properties-documentation</td>
+      <td>MINOR</td>
+      <td>Check each of the properties in the business object to ensure the documentation of the property is not empty.</td>
+      <td>For maintenance purposes, a documentation or description for each BPM artifact is necessary. A well-described artifact can be very helpful for users to have a better understanding of the artifact. It is strongly recommended that a documentation or description be set for each artifact.</td>
+      <td>Documentation</td>
+    </tr>
+    <tr>
+      <td>check-shared-business-object</td>
+      <td>MAJOR</td>
+      <td>Check each of the business objects to ensure it is not a shared object.</td>
+      <td>If a shared business object is a large object, it can cause database bloat and other runtime performance issues.</td>
+      <td>Performance</td>
+    </tr>
+    <tr>
+      <td>check-too-big-businessobject-used</td>
+      <td>MAJOR</td>
+      <td>Check each of the business objects to ensure the attribute number of the business object in ‘the process app’ is not more than 50.</td>
+      <td>Business processes should store only the data that is needed for the process or a service as the process runs.</td>
+      <td>Performance</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="case-solution">Case Solution</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Rule</th>
+      <th>Level</th>
+      <th>Description</th>
+      <th>Advice</th>
+      <th>Tags</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>check-casetype-documentation</td>
+      <td>MINOR</td>
+      <td>Check all of the case types’ documents and ensure that each case type’s documentation is not empty.</td>
+      <td>For maintenance purposes, a documentation or description for each CaseType artifact is necessary. A well-described artifact can be very helpful for users to have a better understanding of the artifact. It is strongly recommended that a documentation or description be set for each artifact.</td>
+      <td>Documentation</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-case-without-casetype</td>
+      <td>CRITICAL</td>
+      <td>Check the process app and ensure that each case solution contains at least one case type.</td>
+      <td>At least one case type must be defined in a case solution.</td>
+      <td>Implementation</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-case-without-role</td>
+      <td>CRITICAL</td>
+      <td>Check the process app and ensure that each case solution contains at least one role.</td>
+      <td>At least one role must be defined in a case solution.</td>
+      <td>Implementation</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-page-documentation</td>
+      <td>MINOR</td>
+      <td>Check all of the pages’ documents and ensure that each page’s documentation is not empty.</td>
+      <td>For maintenance purposes, a documentation or description for each CaseType artifact is necessary. A well-described artifact can be very helpful for users to have a better understanding of the artifact. It is strongly recommended that a documentation or description be set for each artifact.</td>
+      <td>Documentation</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-page-javascript-coding-style</td>
+      <td>MINOR</td>
+      <td>Check the JavaScript code in the pages and ensure that each JavaScript code complies with the general JavaScript coding style.</td>
+      <td>JavaScript codes should comply with the general JavaScript coding style.</td>
+      <td>JavaScript</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-page-javascript-length</td>
+      <td>MAJOR</td>
+      <td>Check the JavaScript code in the pages and ensure that the line number is less than 100 lines.</td>
+      <td><strong>Avoid large JavaScript blocks</strong> because JavaScript is interpreted and therefore slower to process than other compiled mechanisms such as Java code. Large JavaScript blocks can also produce very large Document Object Model (DOM) trees. As a general guideline, limit a JavaScript block to 100 lines. If your implementation exceeds this value, re-evaluate the design and refactor the implementation to use smaller JavaScript blocks.</td>
+      <td>JavaScript</td>
+      <td><a href="https://www.redbooks.ibm.com/redbooks/pdfs/sg248216.pdf">IBM BPM Performance Tuning and Best Practices</a></td>
+    </tr>
+    <tr>
+      <td>check-page-javascript-length-pro</td>
+      <td>CRITICAL</td>
+      <td>Check the JavaScript code in the pages and ensure that the line number is less than 300 lines.</td>
+      <td><strong>Avoid large JavaScript blocks</strong> because JavaScript is interpreted and therefore slower to process than other compiled mechanisms such as Java code. Large JavaScript blocks can also produce very large Document Object Model (DOM) trees. As a general guideline, limit a JavaScript block to 300 lines. If your implementation exceeds this value, re-evaluate the design and refactor the implementation to use smaller JavaScript blocks.</td>
+      <td>JavaScript</td>
+      <td><a href="https://www.redbooks.ibm.com/redbooks/pdfs/sg248216.pdf">IBM BPM Performance Tuning and Best Practices</a></td>
+    </tr>
+    <tr>
+      <td>check-property-documentation</td>
+      <td>MINOR</td>
+      <td>Check all of the properties’ documents and ensure that each property’s documentation is not empty.</td>
+      <td>For maintenance purposes, a documentation or description for each CaseType artifact is necessary. A well-described artifact can be very helpful for users to have a better understanding of the artifact. It is strongly recommended that a documentation or description be set for each artifact.</td>
+      <td>Documentation</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-role-documentation</td>
+      <td>MINOR</td>
+      <td>Check all of the roles’ documents and ensure that each role’s documentation is not empty.</td>
+      <td>For maintenance purposes, a documentation or description for each CaseType artifact is necessary. A well-described artifact can be very helpful for users to have a better understanding of the artifact. It is strongly recommended that a documentation or description be set for each artifact.</td>
+      <td>Documentation</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-unused-page</td>
+      <td>MAJOR</td>
+      <td>Check all of the pages in the ICM solution and ensure that each page is used in the case solution.</td>
+      <td>The unused pages should be deleted.</td>
+      <td>Redundant</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-unused-property</td>
+      <td>MAJOR</td>
+      <td>Check all of the properties in the ICM solution and ensure that each property is used in the case solution.</td>
+      <td>The unused properties should be deleted.</td>
+      <td>Redundant</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="case-type">Case Type</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Rule</th>
+      <th>Level</th>
+      <th>Description</th>
+      <th>Advice</th>
+      <th>Tags</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>check-activity-documentation</td>
+      <td>MINOR</td>
+      <td>Check if the documentation of the activity in the case solution is empty.</td>
+      <td>For maintenance purposes, a documentation or description for each Case property artifact is necessary. A well-described artifact can be very helpful for users to have a better understanding of the artifact. It is strongly recommended that a documentation or description be set for each artifact.</td>
+      <td>Documentation</td>
+    </tr>
+    <tr>
+      <td>check-casepagelayout-documentation</td>
+      <td>MINOR</td>
+      <td>Check if the documentation of the case page layout in the case solution is empty.</td>
+      <td>For maintenance purposes, a documentation or description for each Case property artifact is necessary. A well-described artifact can be very helpful for users to have a better understanding of the artifact. It is strongly recommended that a documentation or description be set for each artifact.</td>
+      <td>Documentation</td>
+    </tr>
+    <tr>
+      <td>check-casetype-without-activity</td>
+      <td>MAJOR</td>
+      <td>Check the case types in the ICM solution, ensure that each case type contains at least one activity</td>
+      <td>At least one activity must be defined in a case type.</td>
+      <td>Implementation</td>
+    </tr>
+    <tr>
+      <td>check-propertyview-documentation</td>
+      <td>MINOR</td>
+      <td>Check if the documentation of the property view in the case solution is empty.</td>
+      <td>For maintenance purposes, a documentation or description for each Case property artifact is necessary. A well-described artifact can be very helpful for users to have a better understanding of the artifact. It is strongly recommended that a documentation or description be set for each artifact.</td>
+      <td>Documentation</td>
+    </tr>
+    <tr>
+      <td>check-rule-documentation</td>
+      <td>MINOR</td>
+      <td>Check if the documentation of the rule in the case solution is empty.</td>
+      <td>For maintenance purposes, a documentation or description for each Case property artifact is necessary. A well-described artifact can be very helpful for users to have a better understanding of the artifact. It is strongly recommended that a documentation or description be set for each artifact.</td>
+      <td>Documentation</td>
+    </tr>
+    <tr>
+      <td>check-unused-casepagelayout</td>
+      <td>MAJOR</td>
+      <td>Check the case pages in the ICM solution, ensure that each case page layout is used in the case solution.</td>
+      <td>The unused case page layouts should be deleted.</td>
+      <td>Redundant</td>
+    </tr>
+    <tr>
+      <td>check-unused-propertyview</td>
+      <td>MAJOR</td>
+      <td>Check the property views in the ICM solution, ensure that each property view is used in the case solution.</td>
+      <td>The unused property views should be deleted.</td>
+      <td>Redundant</td>
+    </tr>
+    <tr>
+      <td>check-unused-rule</td>
+      <td>MAJOR</td>
+      <td>Check the rules in the ICM solution, ensure that each rule is used in the case solution.</td>
+      <td>The unused rules should be deleted.</td>
+      <td>Redundant</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="coach-view">Coach View</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Rule</th>
+      <th>Level</th>
+      <th>Description</th>
+      <th>Advice</th>
+      <th>Tags</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>check-coachcontrol-with-no-binding-value</td>
+      <td>MINOR</td>
+      <td>Check the controls in each service to ensure the control is binding with a value.</td>
+      <td>Every coach view should have a binding value.</td>
+      <td>Implementation</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-coachview-reach-endpoint</td>
+      <td>MAJOR</td>
+      <td>Check all of the coaches, ensure that each coach is wired to an end node.</td>
+      <td>Coaches in human services can be resource-consuming for the server. For developing efficient coaches, <strong>always wire coaches to end nodes</strong>.</td>
+      <td>Performance</td>
+      <td><a href="https://www.redbooks.ibm.com/redbooks/pdfs/sg248216.pdf">IBM BPM Performance Tuning and Best Practices</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="migration">Migration</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Rule</th>
+      <th>Level</th>
+      <th>Description</th>
+      <th>Advice</th>
+      <th>Tags</th>
+      <th>Reference</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>check-ad-hoc-start-event</td>
+      <td>MINOR</td>
+      <td>Ad hoc start events are detected.</td>
+      <td>Ad hoc start events are deprecated and are not supported in the web Process Designer. These events are converted to a Start Message event with no UCA implementation when the BPD is converted to a process. You need to change the event to an ad hoc activity and implement it as a subprocess.</td>
+      <td>Migration</td>
+      <td><a href="https://www.ibm.com/docs/en/baw/22.x?topic=deprecated-converting-bpds-processes">Converting BPDs to processes</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-bpd-component-contains-inner-table-in-data-mapping</td>
+      <td>CRITICAL</td>
+      <td>Use of internal tables detected in the implementation of the item.</td>
+      <td>A component or item’s Script/Conditions Script/Pre&amp;Post Assignments/Pre&amp;Post Execution Script/SQL Input Mapping may contain IBM BAW database tables(for example, the DB tables with prefix "LSW_"). <b>Avoid accessing internal Business Process Manager tables directly<b> because these are internal tables and the definition and content of the tables may change in future Business Process Manager releases. Instead, use published Business Process Manager APIs, such as JavaScript and REST APIs.</b></b></td>
+      <td>Migration</td>
+      <td><a href="https://www.redbooks.ibm.com/redbooks/pdfs/sg248216.pdf">IBM BPM Performance Tuning and Best Practices</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-bpd-component-contains-inner-table-in-script</td>
+      <td>CRITICAL</td>
+      <td>Use of internal tables detected in the implementation of the item.</td>
+      <td>A component or item’s Script/Conditions Script/Pre&amp;Post Assignments/Pre&amp;Post Execution Script/SQL Input Mapping may contain IBM BAW database tables(for example, the DB tables with prefix "LSW_"). <b>Avoid accessing internal Business Process Manager tables directly<b> because these are internal tables and the definition and content of the tables may change in future Business Process Manager releases. Instead, use published Business Process Manager APIs, such as JavaScript and REST APIs.</b></b></td>
+      <td>Migration</td>
+      <td><a href="https://www.redbooks.ibm.com/redbooks/pdfs/sg248216.pdf">IBM BPM Performance Tuning and Best Practices</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-bpd-icon-settings-deprecated</td>
+      <td>MINOR</td>
+      <td>Icon settings on process nodes in BPD are detected.</td>
+      <td>There is no equivalent artifact for icon settings on process nodes in the Web Process Designer, and therefore they are ignored when converting BPDs to processes.</td>
+      <td>Migration</td>
+      <td><a href="https://www.ibm.com/docs/en/baw/22.x?topic=deprecated-converting-bpds-processes">Converting BPDs to processes</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-bpd-javascript-live-connect</td>
+      <td>MINOR</td>
+      <td>LiveConnect API is called in the scripts.</td>
+      <td>LiveConnect API is deprecated in BAW on the container, please replace it with Vanilla JavaScript.</td>
+      <td>Migration</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-bpd-milestones-deprecated</td>
+      <td>MINOR</td>
+      <td>Milestones in BPD are detected.</td>
+      <td>There is no equivalent artifact for milestones in the Web Process Designer, and therefore they are ignored when converting BPDs to processes.</td>
+      <td>Migration</td>
+      <td><a href="https://www.ibm.com/docs/en/baw/22.x?topic=deprecated-converting-bpds-processes">Converting BPDs to processes</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-bpds-deprecated</td>
+      <td>MINOR</td>
+      <td>BPDs are detected.</td>
+      <td>The BPDs that are created in the desktop Process Designer are not supported in containers. To convert BPDs into processes, please use <b>BPD Conversion</b> in the web Process Designer.</td>
+      <td>Migration</td>
+      <td><a href="https://www.ibm.com/docs/en/baw/22.x?topic=deprecated-converting-bpds-processes">Converting BPDs to processes</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-bpd-simulation-configurations-deprecated</td>
+      <td>MINOR</td>
+      <td>Simulation configurations in BPD are detected.</td>
+      <td>There is no equivalent artifact for simulation configurations in the Web Process Designer, and therefore they are ignored when converting BPDs to processes.</td>
+      <td>Migration</td>
+      <td><a href="https://www.ibm.com/docs/en/baw/22.x?topic=deprecated-converting-bpds-processes">Converting BPDs to processes</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-coachview-using-deprecated-coach-views</td>
+      <td>MINOR</td>
+      <td>Artifacts using deprecated Coach Views are detected.</td>
+      <td>To convert deprecated coach views into UI views, please use <b>UI Conversion</b> in the web Process Designer.</td>
+      <td>Migration</td>
+      <td><a href="https://www.ibm.com/docs/en/baw/22.x?topic=functions-converting-deprecated-coach-views">Converting deprecated coach views into UI views</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-deprecated-task-routing-policy</td>
+      <td>MINOR</td>
+      <td>Deprecated assignment types are detected.</td>
+      <td>The assignment types such as Last User in Lane, Routing Policy and List of Users are not supported in the web Process Designer because they are deprecated in the desktop Process Designer. To achieve the same effect as these assignment types, you need to implement the function manually by using a team filter or retrieval service.</td>
+      <td>Migration</td>
+      <td><a href="https://www.ibm.com/docs/en/baw/22.x?topic=deprecated-converting-bpds-processes">Converting BPDs to processes</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-external-implementations-deprecated</td>
+      <td>MINOR</td>
+      <td>External Implementations are detected.</td>
+      <td>The external implementations that are created in the desktop Process Designer are not supported in containers. To convert external implementations into external services, please use <b>Service Conversion</b> in the web Process Designer.</td>
+      <td>Migration</td>
+      <td><a href="https://www.ibm.com/docs/en/baw/22.x?topic=implementations-converting-external">Converting external implementations</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-heritage-coaches-deprecated</td>
+      <td>MINOR</td>
+      <td>Heritage Coaches are detected.</td>
+      <td>The Heritage Coaches that are created in the desktop Process Designer are not supported in containers. To migrate Heritage Coaches, please re-implement them using the BPM UI Toolkit.</td>
+      <td>Migration</td>
+      <td><a href="https://www.ibm.com/docs/en/baw/22.x?topic=designer-where-edit-process-artifacts">Where to edit Process Designer artifacts</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-heritage-services-deprecated</td>
+      <td>MINOR</td>
+      <td>Heritage Services are detected.</td>
+      <td>The heritage services that are created in the desktop Process Designer are not supported in containers. To convert heritage services into service flows, please use <b>Service Conversion</b> in the web Process Designer.</td>
+      <td>Migration</td>
+      <td><a href="https://www.ibm.com/docs/en/baw/22.x?topic=services-converting-heritage">Converting heritage services</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-historical-analysis-scenarios-deprecated</td>
+      <td>MINOR</td>
+      <td>Historical Analysis Scenarios are detected.</td>
+      <td>The Historical Analysis Scenarios that are created in the desktop Process Designer are not supported in containers.</td>
+      <td>Migration</td>
+      <td><a href="https://www.ibm.com/docs/en/baw/22.x?topic=designer-where-edit-process-artifacts">Where to edit Process Designer artifacts</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-ibm-case-manager-integration-services-deprecated</td>
+      <td>MINOR</td>
+      <td>IBM Case Manager Integration Services are detected.</td>
+      <td>The IBM Case Manager Integration Services that are created in the desktop Process Designer are not supported in containers. In the web Process Designer, use a process with ad-hoc activities instead of the IBM Case Manager Integration Service.</td>
+      <td>Migration</td>
+      <td><a href="https://www.ibm.com/docs/en/baw/22.x?topic=designer-where-edit-process-artifacts">Where to edit Process Designer artifacts</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-inline-web-service-configuration</td>
+      <td>MINOR</td>
+      <td>An inline Web Service Configuration is detected.</td>
+      <td>The in-line configuration will be lost when converting an Integration Service that has an inline Web Service integration into a service flow. You need to change the Web Service integration to using the server tab-based definitions prior to converting the service flow.</td>
+      <td>Migration</td>
+      <td><a href="https://www.ibm.com/support/knowledgecenter/en/SS8JB4/com.ibm.wbpm.wle.editor.doc/topics/tconvwebservice.html">Converting integration services with web service integrations</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-key-performance-indicators-deprecated</td>
+      <td>MINOR</td>
+      <td>Key Performance Indicators are detected.</td>
+      <td>The Key Performance Indicators that are created in the desktop Process Designer are not supported in containers.</td>
+      <td>Migration</td>
+      <td><a href="https://www.ibm.com/docs/en/baw/22.x?topic=designer-where-edit-process-artifacts">Where to edit Process Designer artifacts</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-service-item-contains-inner-table-in-data-mapping</td>
+      <td>CRITICAL</td>
+      <td>Use of internal tables detected in the implementation of the item.</td>
+      <td>A component or item’s Script/Conditions Script/Pre&amp;Post Assignments/Pre&amp;Post Execution Script/SQL Input Mapping may contain IBM BAW database tables(for example, the DB tables with prefix "LSW_"). <b>Avoid accessing internal Business Process Manager tables directly<b> because these are internal tables and the definition and content of the tables may change in future Business Process Manager releases. Instead, use published Business Process Manager APIs, such as JavaScript and REST APIs.</b></b></td>
+      <td>Migration</td>
+      <td>Migration</td>
+      <td><a href="https://www.redbooks.ibm.com/redbooks/pdfs/sg248216.pdf">IBM BPM Performance Tuning and Best Practices</a></td>
+    </tr>
+    <tr>
+      <td>check-service-item-contains-inner-table-in-script</td>
+      <td>CRITICAL</td>
+      <td>Use of internal tables detected in the implementation of the item.</td>
+      <td>A component or item’s Script/Conditions Script/Pre&amp;Post Assignments/Pre&amp;Post Execution Script/SQL Input Mapping may contain IBM BAW database tables(for example, the DB tables with prefix "LSW_"). <b>Avoid accessing internal Business Process Manager tables directly<b> because these are internal tables and the definition and content of the tables may change in future Business Process Manager releases. Instead, use published Business Process Manager APIs, such as JavaScript and REST APIs.</b></b></td>
+      <td>Migration</td>
+      <td><a href="https://www.redbooks.ibm.com/redbooks/pdfs/sg248216.pdf">IBM BPM Performance Tuning and Best Practices</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-service-javascript-live-connect</td>
+      <td>MINOR</td>
+      <td>LiveConnect API is called in the scripts.</td>
+      <td>LiveConnect API is deprecated in BAW on the container, please replace it with Vanilla JavaScript.</td>
+      <td>Migration</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-service-using-deprecated-coach-views</td>
+      <td>MINOR</td>
+      <td>Artifacts using deprecated Coach Views are detected.</td>
+      <td>To convert deprecated coach views into UI views, please use <b>UI Conversion</b> in the web Process Designer.</td>
+      <td>Migration</td>
+      <td><a href="https://www.ibm.com/docs/en/baw/22.x?topic=functions-converting-deprecated-coach-views">Converting deprecated coach views into UI views</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-simulation-analysis-scenarios-deprecated</td>
+      <td>MINOR</td>
+      <td>Simulation Analysis Scenarios are detected.</td>
+      <td>The Simulation Analysis Scenarios that are created in the desktop Process Designer are not supported in containers.</td>
+      <td>Migration</td>
+      <td><a href="https://www.ibm.com/docs/en/baw/22.x?topic=designer-where-edit-process-artifacts">Where to edit Process Designer artifacts</a></td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="process">Process</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Rule</th>
+      <th>Level</th>
+      <th>Description</th>
+      <th>Advice</th>
+      <th>Tags</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>check-auto-tracking-enable</td>
+      <td>MAJOR</td>
+      <td>Check if the process has auto-tracking enabled or not.</td>
+      <td><strong>Auto-tracking</strong> is enabled by default for Processes. This capability is important for many Processes because it enables the gathering, tracking, and reporting of key business metrics. However, an additional cost exists as a result of auto-tracking because the events are processed by the Performance Data Warehouse and persisted in the database. Disable auto-tracking for Processes that do not require tracking and reporting business metrics.</td>
+      <td>Performance</td>
+      <td><a href="https://www.redbooks.ibm.com/redbooks/pdfs/sg248216.pdf">IBM BPM Performance Tuning and Best Practices</a>, <a href="https://www.ibm.com/community/automation/docs/baw/best-practices-recommendations/">IBM BPM Developer Forum</a></td>
+    </tr>
+    <tr>
+      <td>check-bpd-activity-contain-tostring-datamapping</td>
+      <td>MAJOR</td>
+      <td>Check if the activity contains toString data mapping.</td>
+      <td>Activity contains a Data Mapping which makes use of the toString function on a potentially large variable could cause performance issues.</td>
+      <td>Performance</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-bpd-activity-narrative</td>
+      <td>MINOR</td>
+      <td>Check the components of every lane in a BPD to ensure the narrative of the activity component is not empty.</td>
+      <td>For user experience purposes, business users should have a way to know the details of the task from the portal. It is strongly recommended that a narrative should be set for every activity.</td>
+      <td>Documentation</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-bpd-activity-subject</td>
+      <td>MINOR</td>
+      <td>Check the components of every lane in a BPD to ensure the subject of the activity component is not empty.</td>
+      <td>For user experience purposes, business users should have a way to know the target of the task from the portal. It is strongly recommended that a subject should be set for every activity.</td>
+      <td>Documentation</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-bpd-component-javascript-contains-sleep</td>
+      <td>MAJOR</td>
+      <td>Check if the JavaScript uses java.lang.Thread.currentThread().sleep.</td>
+      <td>JavaScript should not contain java.lang.Thread.currentThread().sleep.</td>
+      <td>JavaScript</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-bpd-component-need-exception-handle</td>
+      <td>CRITICAL</td>
+      <td>Check the components in a BPD to ensure the activity component whose name matches the naming convention of “^exception” is handled.</td>
+      <td>The exception thrown at runtime should be well handled.</td>
+      <td>InfiniteLoop</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-bpd-component-sql-injection-in-data-mapping</td>
+      <td>MAJOR</td>
+      <td>The component’s SQL Input Mapping may contain SQL injection.</td>
+      <td>The SQL Input Mapping is constructed using untrusted data and vulnerable to SQL injection. Use SQLStatement.parameters to write parameterized query instead.</td>
+      <td>SAST</td>
+      <td><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP Injection</a></td>
+    </tr>
+    <tr>
+      <td>check-bpd-component-sql-injection-in-script</td>
+      <td>MAJOR</td>
+      <td>The component’s Script/Conditions Script/Pre&amp;Post Assignments may contain SQL injection.</td>
+      <td>The SQLStatement.sql is constructed using untrusted data and vulnerable to SQL injection. Use SQLStatement.parameters to write parameterized query instead.</td>
+      <td>SAST</td>
+      <td><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP Injection</a></td>
+    </tr>
+    <tr>
+      <td>check-bpd-contains-infinite-loop</td>
+      <td>MAJOR</td>
+      <td>Potential infinite loop is detected.</td>
+      <td>Potential infinite loop is detected. A loop without any exit criteria will result in an infinite loop. Please review.</td>
+      <td>Implementation</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-bpd-documentation</td>
+      <td>MINOR</td>
+      <td>Check the documentation in the BPD to ensure it is not empty.</td>
+      <td>For maintenance purposes, documentation or a description for each BPM artifact is necessary. A well-described artifact can be very helpful for users to have a better understanding of the artifact. It is strongly recommended that documentation or a description be set for each artifact.</td>
+      <td>Documentation</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-bpd-duplicated-EPVs</td>
+      <td>MAJOR</td>
+      <td>Check if there are duplicated EPVs in the process.</td>
+      <td>A BPD or process should not contain duplicated EPVs, which is not meaningful.</td>
+      <td>Redundant</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-bpd-error-not-fully-implemented</td>
+      <td>MAJOR</td>
+      <td>The Error is not implemented.</td>
+      <td>Please add an Error code and Error mapping configuration for this Error. If an error without configuration is triggered, it will throw its own exception and cannot handle errors normally.</td>
+      <td>Implementation</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-bpd-event-end-contains-script</td>
+      <td>MAJOR</td>
+      <td>Check if the end event contains script code.</td>
+      <td>For maintenance purposes, the start or end event in the BPD should not contain any JavaScript code. If necessary, the JavaScript code defined in the event should be implemented in another component.</td>
+      <td>Maintenance</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-bpd-event-end-delete-instance-data</td>
+      <td>MINOR</td>
+      <td>The terminate end event is set to delete all terminated instance runtime data.</td>
+      <td>When the BPD runtime performs frequent deletions, IBM Business Automation Workflow is as frequently performing the purge of the corresponding documents which should be deleted from the Process Portal Search index. When this purge is too frequently performed, it can impact the overall performance of the BPD runtime engine and also cause deadlocks on the BPM_INSTANCE_INDEX and the BPM_TASK_INDEX tables. Such a situation can happen when the end event of a process is of the ‘Terminate’ type and the event property ‘Delete all terminated instance runtime data’ is checked. Upgrade BAW to 23.0.1+ and install all fix packs to fix the issue.</td>
+      <td>Performance</td>
+      <td><a href="https://www.ibm.com/mysupport/s/defect/aCI3p000000LC32GAG/dt178441">IBM BAW: Performance degradation and deadlocks can be observed when there are frequent deletions of process instances</a>, <a href="https://www.ibm.com/mysupport/s/defect/aCI3p000000H0qAGAS/dt238616">Setting the purge-minimum-interval property has no effect - IBM Business Automation Workflow</a></td>
+    </tr>
+    <tr>
+      <td>check-bpd-event-start-contains-script</td>
+      <td>MAJOR</td>
+      <td>Check if the start event contains script code.</td>
+      <td>For maintenance purposes, the start or end event in the BPD should not contain any JavaScript code. If necessary, the JavaScript code defined in the event should be implemented in another component.</td>
+      <td>Maintenance</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-bpd-gateway-condition</td>
+      <td>CRITICAL</td>
+      <td>Check if the component of its lane in the BPD has a complete gateway condition.</td>
+      <td>Decision gates with conditions should be implemented properly.</td>
+      <td>Implementation</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-bpd-humanservice-in-system-lane</td>
+      <td>MAJOR</td>
+      <td>Check the components of its lane in the BPD to ensure the Activities with human service are not implemented in a system lane.</td>
+      <td>A system lane should not contain any human tasks.</td>
+      <td>Performance</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-bpd-implementation-javascript-coding-style</td>
+      <td>MINOR</td>
+      <td>Check if the implementation JavaScript code complies with the general JavaScript coding style.</td>
+      <td>JavaScript codes should comply with the general JavaScript coding style.</td>
+      <td>JavaScript</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-bpd-message-event</td>
+      <td>MAJOR</td>
+      <td>Check the components of the lane in the BPD to ensure the attached UCA ID of the message event is not empty.</td>
+      <td>A message event should have a UCA attached to it.</td>
+      <td>Implementation</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-bpd-not-fully-implemented</td>
+      <td>MAJOR</td>
+      <td>Check if the BPD is fully implemented.</td>
+      <td>A BPD should be implemented. If the BPD is not necessary, you should delete it.</td>
+      <td>Implementation</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-bpd-phantom-steps</td>
+      <td>MAJOR</td>
+      <td>Check the components of the lane in the BPD to ensure the activity component has an attached activity.</td>
+      <td>If the activity is not necessary for a process or BPD, you should delete it. Otherwise, add implementation to the activity.</td>
+      <td>Implementation</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-bpd-searchable-field</td>
+      <td>CRITICAL</td>
+      <td>Check the total number of searchable fields in a BPD or Process to ensure it is not more than 25.</td>
+      <td>Business variables add more overhead to the Process Server, so limit business data searches to only those fields that need to be searchable in the Process Portal. As a general guideline, <strong>rarely are more than 25 searchable variables required</strong> in a Process. If your implementation has more searchable variables than this, reevaluate your design and refactor as needed to reduce the number of searchable variables.</td>
+      <td>Performance</td>
+      <td><a href="https://www.redbooks.ibm.com/redbooks/pdfs/sg248216.pdf">IBM BPM Performance Tuning and Best Practices</a></td>
+    </tr>
+    <tr>
+      <td>check-bpd-step-incorrectly-referenced</td>
+      <td>MAJOR</td>
+      <td>Check the documentation of the participant to ensure it is not empty.</td>
+      <td>A redundant component that is not linked in the end-to-end process flow should be deleted.</td>
+      <td>Redundant</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-bpd-unused-variables</td>
+      <td>MAJOR</td>
+      <td>Check if the process or BPD has unused variables that should be deleted.</td>
+      <td>Unused variables should be deleted.</td>
+      <td>Redundant</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-delete-completed-task</td>
+      <td>CRITICAL</td>
+      <td>Check if the component is a system task and is set to delete on completion.</td>
+      <td>It’s recommended that you enable <strong>Delete Task on Completion</strong> for tasks in a system swim lane, because large volumes of completed tasks can greatly impact the performance of instance migration.</td>
+      <td>Performance</td>
+      <td><a href="https://www.redbooks.ibm.com/redbooks/pdfs/sg248216.pdf">IBM BPM Performance Tuning and Best Practices</a></td>
+    </tr>
+    <tr>
+      <td>check-lane-participant-not-default</td>
+      <td>MAJOR</td>
+      <td>Check if the attached participant of all lanes is set to all users.</td>
+      <td>Assigning a swimlane to default all users could lead to performance problems when there is a large user registry. Especially if the LDAP is configured, when you run an activity in the lane, it will attempt to populate all the users in your LDAP registry, which can be typically very large.</td>
+      <td>Performance</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-MIL-system-activity</td>
+      <td>MAJOR</td>
+      <td>Check if there is a system lane activity that uses multi-instance loops.</td>
+      <td><strong>Do not use MILs for batch or system lane activities</strong>. This pattern can generate an excessive number of tokens for the BPD to process. Also, activities in MILs in the system lane are run on a single thread, which is clearly not optimal on multiprocessor core servers.</td>
+      <td>Performance</td>
+      <td><a href="https://www.redbooks.ibm.com/redbooks/pdfs/sg248216.pdf">IBM BPM Performance Tuning and Best Practices</a></td>
+    </tr>
+    <tr>
+      <td>check-participant-all-users</td>
+      <td>MAJOR</td>
+      <td>Check if the participant contains a group set to all users.</td>
+      <td>The participant group should better not contain all users (tw allusers). If it does, that means any user in the LDAP can see all of the tasks assigned to this group, which may cause negative performance implications. Please consider changing your group members.</td>
+      <td>Performance</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-participant-documentation</td>
+      <td>MINOR</td>
+      <td>Check the documentation of the participant to ensure it is not empty.</td>
+      <td>For maintenance purposes, documentation or a description for each BPM artifact is necessary. A well-described artifact can be very helpful for users to have a better understanding of the artifact. It is strongly recommended that documentation or a description be set for each artifact.</td>
+      <td>Documentation</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-sequential-activities-in-lane</td>
+      <td>MAJOR</td>
+      <td>‘String of Pearls’ problem detected.</td>
+      <td>Sequential system lane activities or human activities within the same lane should be highlighted as something to avoid, also known as the ‘<strong>String of Pearls</strong>’ problem. Sequential activities within the same lane almost always can be merged. Also, sequential activities, especially when used in the system lane, can have a major impact on performance.</td>
+      <td>Performance</td>
+      <td><a href="https://www.redbooks.ibm.com/redbooks/pdfs/sg248216.pdf">IBM BPM Performance Tuning and Best Practices</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="service">Service</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Rule</th>
+      <th>Level</th>
+      <th>Description</th>
+      <th>Advice</th>
+      <th>Tags</th>
+      <th>Reference</th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>check-app-unused-service</td>
+      <td>MAJOR</td>
+      <td>Check if there are unused services in the process app.</td>
+      <td>Services should be used by other artifacts or defined as an exposed human service. Redundant services should be deleted.</td>
+      <td>Redundant</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-coach-with-too-many-coach-view</td>
+      <td>CRITICAL</td>
+      <td>The number of coach views in the coach is more than 500.</td>
+      <td>Simplify the coach. Consider redesigning the complex coach into separate coaches to reduce the number of coach views per coach.</td>
+      <td>Performance</td>
+      <td><a href="https://developer.ibm.com/recipes/tutorials/ibm-bpm-ui-performance">IBM BPM UI Performance</a></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-humanservice-with-too-many-coach</td>
+      <td>MAJOR</td>
+      <td>Check the total number of coaches in the service to ensure it is not more than 5.</td>
+      <td>For maintenance purposes, a human service should only include necessary coaches.</td>
+      <td>Maintenance</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-service-coachcontrol-with-no-binding-value</td>
+      <td>MINOR</td>
+      <td>The coach control does not have a binding value.</td>
+      <td>A coach control may need a binding value.</td>
+      <td>Implementation</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-service-documentation</td>
+      <td>MINOR</td>
+      <td>Check the services in the process app to ensure that there is no service whose documentation is empty.</td>
+      <td>For maintenance purposes, documentation or a description for each BPM artifact is necessary. A well-described artifact can be very helpful for users to have a better understanding of the artifact. It is strongly recommended that documentation or a description be set for each artifact.</td>
+      <td>Documentation</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-service-duplicated-EPVs</td>
+      <td>MAJOR</td>
+      <td>Check if there are duplicated EPVs in each service.</td>
+      <td>A service should not contain duplicated EPVs, which is not meaningful.</td>
+      <td>Redundant</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-service-duplicated-resource-bundles</td>
+      <td>MAJOR</td>
+      <td>Check if there are duplicated resource bundles in each service.</td>
+      <td>A service should not contain duplicated resource bundles, which is not meaningful.</td>
+      <td>Redundant</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-service-error-not-fully-implemented</td>
+      <td>MAJOR</td>
+      <td>The Error is not implemented.</td>
+      <td>Please add an Error code and Error mapping configuration for this Error. If an error without configuration is triggered, it will throw its own exception and cannot handle errors normally.</td>
+      <td>Implementation</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-service-event-end-contains-script</td>
+      <td>MAJOR</td>
+      <td>Check the items of the service. If an item is an exit point, check if it contains script code.</td>
+      <td>For maintenance purposes, the exit point in the service should not contain any JavaScript code. If necessary, JavaScript code defined in the exit point should be implemented in another item.</td>
+      <td>Maintenance</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-service-exception-loop-item</td>
+      <td>CRITICAL</td>
+      <td>Check the items of the service to ensure that there is no exception event loop item.</td>
+      <td>The item in the service should avoid an event loop exception.</td>
+      <td>InfiniteLoop</td>
+      <td> </td>
+      <td> </td>
+      <td>Performance</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-service-item-contains-infinite-loop</td>
+      <td>MAJOR</td>
+      <td>Potential infinite loop is detected.</td>
+      <td>Potential infinite loop is detected. A loop without any exit criteria will result in an infinite loop. Please review.</td>
+      <td>Implementation</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-service-item-contains-sleep</td>
+      <td>MAJOR</td>
+      <td>Check if the JavaScript uses java.lang.Thread.currentThread().sleep.</td>
+      <td>JavaScript should not contain java.lang.Thread.currentThread().sleep.</td>
+      <td>Implementation</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-service-item-contain-tostring-datamapping</td>
+      <td>MAJOR</td>
+      <td>Check all the items in services to see if any item contains toString data mapping.</td>
+      <td>A Service task contains a Data Mapping which makes use of the toString function on a potentially large variable.</td>
+      <td>Performance</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-service-item-execution-assignment-javascript-coding-style</td>
+      <td>MINOR</td>
+      <td>Check all the assignment JavaScript code in each service to ensure that the JavaScript codes comply with the general JavaScript coding style.</td>
+      <td>JavaScript codes should comply with the general JavaScript coding style.</td>
+      <td>JavaScript</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-service-item-implementation-javascript-coding-style</td>
+      <td>MINOR</td>
+      <td>Check all the implementation JavaScript code in each service to ensure that the JavaScript codes comply with the general JavaScript coding style.</td>
+      <td>JavaScript codes should comply with the general JavaScript coding style.</td>
+      <td>JavaScript</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-service-item-not-implemented</td>
+      <td>MAJOR</td>
+      <td>Check the service flows to ensure that there is no infinite loop.</td>
+      <td>There is an infinite loop in the service flow. Please review it!</td>
+      <td>Implementation</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-service-item-sql-injection-in-data-mapping</td>
+      <td>MAJOR</td>
+      <td>The service item’s SQL Input Mapping may contain SQL injection.</td>
+      <td>The SQL Input Mapping is constructed using untrusted data and vulnerable to SQL injection. Use SQLStatement.parameters to write a parameterized query instead.</td>
+      <td>SAST</td>
+      <td><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP Injection</a></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-service-item-sql-injection-in-script</td>
+      <td>MAJOR</td>
+      <td>The service item’s Script/Pre&amp;Post Execution Script may contain SQL injection.</td>
+      <td>The SQLStatement.sql is constructed using untrusted data and vulnerable to SQL injection. Use SQLStatement.parameters to write a parameterized query instead.</td>
+      <td>SAST</td>
+      <td><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP Injection</a></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-service-javascript-length</td>
+      <td>MAJOR</td>
+      <td>Check the JavaScript code in the items of the service to ensure that the line number of the item is not more than 100.</td>
+      <td><strong>Avoid large JavaScript blocks</strong> because JavaScript is interpreted and therefore is slower to process than other compiled mechanisms such as Java code. Large JavaScript blocks can also produce very large Document Object Model (DOM) trees. As a general guideline, limit a JavaScript block to 100 lines. If your implementation exceeds this value, re-evaluate the design and refactor the implementation to use smaller JavaScript blocks.</td>
+      <td>JavaScript</td>
+      <td><a href="https://www.redbooks.ibm.com/redbooks/pdfs/sg248216.pdf">IBM BPM Performance Tuning and Best Practices</a></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-service-javascript-length-pro</td>
+      <td>CRITICAL</td>
+      <td>Check the JavaScript code in the items of the service to ensure that the line number of the item is not more than 300.</td>
+      <td><strong>Avoid large JavaScript blocks</strong> because JavaScript is interpreted and therefore is slower to process than other compiled mechanisms such as Java code. Large JavaScript blocks can also produce very large Document Object Model (DOM) trees. As a general guideline, limit a JavaScript block to 300 lines. If your implementation exceeds this value, re-evaluate the design and refactor the implementation to use smaller JavaScript blocks.</td>
+      <td>JavaScript</td>
+      <td><a href="https://www.redbooks.ibm.com/redbooks/pdfs/sg248216.pdf">IBM BPM Performance Tuning and Best Practices</a></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-service-not-fully-implemented</td>
+      <td>MAJOR</td>
+      <td>Check all the services to ensure they are fully implemented.</td>
+      <td>The service in the process app should be properly implemented. If it is not necessary, you should delete it.</td>
+      <td>Implementation</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-service-SOPE-directly-follow-postpone-object</td>
+      <td>MAJOR</td>
+      <td>Check the items of the service to ensure the Stay on Page Event (SOPE) object does not directly follow a Postpone object in a Service.</td>
+      <td>A Stay on Page Event (SOPE) object should not directly follow a Postpone object in a Service.</td>
+      <td>Implementation</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-service-step-incorrectly-referenced</td>
+      <td>MAJOR</td>
+      <td>Check all of the items in services to ensure that all of the items are connected in the service.</td>
+      <td>All unconnected components should be removed from services. Having unconnected components in services can lead to a messy presentation, therefore making the service more difficult to maintain.</td>
+      <td>Implementation</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-service-unused-variables</td>
+      <td>MAJOR</td>
+      <td>Check the variables in the service to ensure that there are no unused variables.</td>
+      <td>Unused variables should be deleted.</td>
+      <td>Redundant</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-service-with-too-many-nested-cshs</td>
+      <td>MAJOR</td>
+      <td>The number of nested client-side human services in the client-side human service is more than 25.</td>
+      <td>Too many nested client-side human services in one client-side human service will cause performance problems. Redesign the client-side human service to not reference so many nested client-side human services. Consider using a series of client-side human services with fewer references to nested client-side human services.</td>
+      <td>Performance</td>
+      <td><a href="https://www.ibm.com/support/pages/client-side-human-service-performance-troubleshooting">Client-side Human Service Performance Troubleshooting</a></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="variable">Variable</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Rule</th>
+      <th>Level</th>
+      <th>Description</th>
+      <th>Advice</th>
+      <th>Tags</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>check-bpd-variables-documentation</td>
+      <td>MINOR</td>
+      <td>Check the private variables of the BPD to ensure the documentation of a variable is not empty.</td>
+      <td>For maintenance purposes, documentation or a description for each BPM artifact is necessary. A well-described artifact can be very helpful for users to have a better understanding of the artifact. It is strongly recommended that documentation or a description be set for each artifact.</td>
+      <td>Documentation</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-bpd-variables-naming-conversion</td>
+      <td>MAJOR</td>
+      <td>Check the private variables of the BPD to ensure the name is not set to “Untitled” or some string containing the word “Untitled”.</td>
+      <td>The name of the variable should be set properly. It should comply with the defined naming conventions. Names that contain the string ‘Untitled’ are not allowed.</td>
+      <td>NamingConversion</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-service-variables-documentation</td>
+      <td>MINOR</td>
+      <td>Check the input variables of the service to ensure the documentation of a variable is not empty.</td>
+      <td>For maintenance purposes, documentation or a description for each BPM artifact is necessary. A well-described artifact can be very helpful for users to have a better understanding of the artifact. It is strongly recommended that documentation or a description be set for each artifact.</td>
+      <td>Documentation</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-service-variables-naming-conversion</td>
+      <td>MAJOR</td>
+      <td>Check the private variables of the service to ensure the name is not set to “Untitled” or some string containing the word “Untitled”.</td>
+      <td>The name of the variable should be set properly. It should comply with the defined naming conventions. Names that contain the string ‘Untitled’ are not allowed.</td>
+      <td>NamingConversion</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>check-service-with-too-many-inputvariables</td>
+      <td>MAJOR</td>
+      <td>Check the total number of the input variables in the service to ensure it is not more than 15.</td>
+      <td>Variables are persisted to the database when execution contexts are saved, which happens fairly frequently (for example, when changing from BPD to service execution, and when running each coach). These persistence operations are expensive. It is recommended that if possible, <strong>minimize the number of variables used</strong>.</td>
+      <td>Performance</td>
+      <td><a href="https://www.redbooks.ibm.com/redbooks/pdfs/sg248216.pdf">IBM BPM Performance Tuning and Best Practices</a></td>
+    </tr>
+    <tr>
+      <td>check-service-with-too-many-outputvariables</td>
+      <td>MAJOR</td>
+      <td>Check the total number of the output variables in the service to ensure it is not more than 15.</td>
+      <td>Variables are persisted to the database when execution contexts are saved, which happens fairly frequently (for example, when changing from BPD to service execution, and when running each coach). These persistence operations are expensive. It is recommended that if possible, <strong>minimize the number of variables used</strong>.</td>
+      <td>Performance</td>
+      <td><a href="https://www.redbooks.ibm.com/redbooks/pdfs/sg248216.pdf">IBM BPM Performance Tuning and Best Practices</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="web-service">Web Service</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Rule</th>
+      <th>Level</th>
+      <th>Description</th>
+      <th>Advice</th>
+      <th>Tags</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>check-webservice-documentation</td>
+      <td>MINOR</td>
+      <td>Check the web service in the process app to ensure the documentation of a web service is not empty.</td>
+      <td>For maintenance purposes, documentation or a description for each BPM artifact is necessary. A well-described artifact can be very helpful for users to have a better understanding of the artifact. It is strongly recommended that documentation or a description be set for each artifact.</td>
+      <td>Documentation</td>
+    </tr>
+    <tr>
+      <td>check-webservice-operation-documentation</td>
+      <td>MINOR</td>
+      <td>Check the web service operation in the web service to ensure the documentation of a web service operation is not empty.</td>
+      <td>For maintenance purposes, documentation or a description for each BPM artifact is necessary. A well-described artifact can be very helpful for users to have a better understanding of the artifact. It is strongly recommended that documentation or a description be set for each artifact.</td>
+      <td>Documentation</td>
+    </tr>
+  </tbody>
+</table>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="../categories/#checkstyle" class="page__taxonomy-item" rel="tag">checkstyle</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2025-12-12">December 12, 2025</time></p>
+        
+      </footer>
+
+      
+
+      
+<nav class="pagination">
+  <div class="previous">
+    <div class="container">
+      
+      <a href="../checkstyle/checkstyle-deploy-checkstyle-ruleset.html" class="pagination--pager"
+        title="Deploy Checkstyle Ruleset
+">Previous
+        <h2 class="titlePreview">Deploy Checkstyle Ruleset
+        </h2>
+      </a>
+      
+    </div>
+  </div>
+  <div class="next">
+    <div class="container">
+      
+      <a href="../checkstyle/checkstyle-odm-or-embedded-rules-upgrade.html" class="pagination--pager"
+        title="Checkstyle ODM/Embedded Rules Upgrade
+">Next
+        <h2 class="titlePreview">Checkstyle ODM/Embedded Rules Upgrade
+        </h2>
+      </a>
+      
+    </div>
+  </div>
+</nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<!-- Documentation for <a href="https://sdc-china.github.io/IDA-doc/">IBM Deployment Accelerator for Business Automation Workflow (IDA) Docs</a>  Last update: 2026-08-21 10:36. -->
+<!-- end custom footer snippets -->
+
+        <div class="page__footer-copyright">&copy; 2026 IBM Deployment Accelerator for Business Automation Workflow (IDA) Docs. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>. Last update: 2026-08-21 10:36</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="../assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+<script src="../assets/js/lunr/lunr.min.js"></script>
+<script src="../assets/js/lunr/lunr-store.js"></script>
+<script src="../assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,1323 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.16.5 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>BAW Configuration - IBM Deployment Accelerator for Business Automation Workflow (IDA) Docs</title>
+<meta name="description" content="BAW Configuration">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="IBM Deployment Accelerator for Business Automation Workflow (IDA) Docs">
+<meta property="og:title" content="BAW Configuration">
+<meta property="og:url" content="../administration/administration-baw-configuration.html">
+
+
+  <meta property="og:description" content="BAW Configuration">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2018-10-03T23:17:55+08:00">
+
+
+
+  <meta property="article:modified_time" content="2025-05-26T23:30:00+08:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="../administration/administration-baw-configuration.html">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": null,
+      "url": null,
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="../feed.xml" type="application/atom+xml" rel="alternate" title="IBM Deployment Accelerator for Business Automation Workflow (IDA) Docs Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="../assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600%7CIBM+Plex+Serif:300,400,500%7CIBM+Plex+Mono:300,400,500,700" rel="stylesheet">
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="../index.html">
+          IBM Deployment Accelerator for Business Automation Workflow (IDA) Docs
+          
+        </a>
+        <ul class="visible-links"></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <span class="nav__sub-title">Installation</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../installation/installation-release-notes.html" class="">Release Notes</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../installation/installation-system-requirement.html" class="">System Requirements</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../installation/installation-installing-ida-application-java17.html" class="">Installing IDA Application on Java 17</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Tutorial</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../tutorial/tutorial-create-a-test-project-and-generate-test-cases.html" class="">Task 1: Create a Test Project and Generate Test Cases</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../tutorial/tutorial-record-replay-and-run-a-test-case.html" class="">Task 2: Record, Replay and Run a Test Case</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../tutorial/tutorial-set-up-checkstyle.html" class="">Task 3: Set up Checkstyle</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../tutorial/tutorial-create-a-pipeline-for-continuous-deployment.html" class="">Task 4: Create a Pipeline for Continuous Deployment</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../tutorial/tutorial-summary.html" class="">Summary</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Test</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../test/test-test-project-management.html" class="">Test Project Management</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../test/test-test-case-management.html" class="">Test Case Management</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../test/test-test-case-label-management.html" class="">Test Case Label Management</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../test/test-test-case-data-binding.html" class="">Test Case Data Binding</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../test/test-test-case-data-dynamic-loading.html" class="">Test Case Data Dynamic Loading</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../test/test-group-command-management.html" class="">Group Command Management</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../test/test-record-and-replay-a-test-case.html" class="">Record and Replay a Test Case</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../test/test-write-javascript-command.html" class="">Write a JavaScript Command</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../test/test-write-java-command.html" class="">Write a Java Command</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../test/test-test-smart-comparison.html" class="">Test Smart Comparison</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../test/test-import-execute-sample-test-project.html" class="">Import and Execute Sample Test Project</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../test/test-run-load-test.html" class="">Run Load Test</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../test/test-test-report.html" class="">Test Report</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../test/test-dynamic-user-assignment.html" class="">Dynamic User Assignment</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../test/test-custom-ootb-command.html" class="">Custom OOTB Command</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Checkstyle</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../checkstyle/checkstyle-analyze-workflow-projects-with-checkstyle.html" class="">Analyze Workflow Projects with Checkstyle</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../checkstyle/checkstyle-customize-checkstyle-rules.html" class="">Customize Checkstyle Rules</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../checkstyle/checkstyle-checkstyle-report.html" class="">Checkstyle Report</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../checkstyle/checkstyle-deploy-checkstyle-ruleset.html" class="">Deploy Checkstyle Ruleset</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../checkstyle/checkstyle-checkstyle-rules-description.html" class="">Checkstyle Rules Description</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../checkstyle/checkstyle-odm-or-embedded-rules-upgrade.html" class="">Checkstyle ODM/Embedded Rules Upgrade</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Snapshot Comparison</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../snapshot-comparison/snapshot-comparison-compare-snapshots.html" class="">Compare Snapshots</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../snapshot-comparison/snapshot-comparison-snapshot-comparison-report.html" class="">Snapshot Comparison Report</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../snapshot-comparison/snapshot-comparison-merge-snapshots.html" class="">Merge Snapshots</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../snapshot-comparison/snapshot-comparison-snapshot-merge-report.html" class="">Snapshot Merge Report</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Analyzer</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../analyzer/analyzer-analyze-workflow-projects-with-analyzer-statistic.html" class="">Analyze Workflow Projects with Analyzer Statistics</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../analyzer/analyzer-analyze-workflow-projects-with-analyzer-toolkit-references.html" class="">Analyze Workflow Projects with Analyzer Toolkit References</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../analyzer/analyzer-statistic-report.html" class="">Analyzer - Statistical Report</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../analyzer/analyzer-toolkit-references-report.html" class="">Analyzer - Toolkit References Report</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Search</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../search/search-search-workflow-projects.html" class="">Search Workflow Projects</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Pipeline</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../pipeline/pipeline-pipeline-overview.html" class="">Pipeline Overview</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../pipeline/pipeline-create-a-pipeline-for-continuous-deployment.html" class="">Create a Pipeline for Continuous Deployment</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../pipeline/pipeline-deploy-snapshot-from-pc-to-ps.html" class="">Deploy Snapshot from PC to PS</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../pipeline/pipeline-pipeline-script.html" class="">Pipeline Script</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../pipeline/pipeline-pipeline-email-notification.html" class="">Pipeline Email Notification</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../pipeline/pipeline-pipeline-report.html" class="">Pipeline Report</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../pipeline/pipeline-toolkit-deployment.html" class="">Toolkit Deployment</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../pipeline/pipeline-approve-and-resume-pipeline-build.html" class="">Approve and Resume Pipeline Build</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../pipeline/pipeline-pipeline-stage&step-reference.html" class="">Pipeline Stage & Step Reference</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Operations Tool</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../operations/operations-operations-tool.html" class="">Operations Tool</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Administration</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../administration/administration-users-management.html" class="">User Management</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../administration/administration-team-configuration.html" class="">Team Manangement</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../administration/administration-role-management.html" class="">Role Manangement</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../administration/administration-baw-configuration.html" class="active">BAW Configuration</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../administration/administration-ssh-configuration.html" class="">SSH Configuration</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../administration/administration-case-solution-deployment-configuration.html" class="">Case Solution Deployment Configuration</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../administration/administration-selenium-hub-configuration.html" class="">Selenium Hub Configuration</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../administration/administration-checkstyle-rule-configuration.html" class="">Checkstyle Rule Configuration</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../administration/administration-custom-recorder.html" class="">Custom Recorder</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../administration/administration-resources.html" class="">Resources</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../administration/administration-start-and-stop-ida-environment.html" class="">Start and Stop IDA Environment</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../administration/administration-settings-configuration.html" class="">Settings Configuration</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">References</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../references/references-architecture.html" class="">Architecture</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../references/references-test-command.html" class="">Test Commands</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../references/references-javascript-api.html" class="">JavaScript API</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../references/references-ida-rest-apis.html" class="">IDA REST APIs</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../references/references-operations.html" class="">Operations</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../references/references-ida-plugin.html" class="">IDA Plug-in</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../references/references-performance-test.html" class="">Performance Test</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../references/references-previous-release-notes.html" class="">Previous Release Notes</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Trouble Shooting</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../troubleshooting/troubleshooting-known-limitation.html" class="">Known Limitations</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="../troubleshooting/troubleshooting-frequently-asked-questions.html" class="">Frequently Asked Questions</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="BAW Configuration">
+    <meta itemprop="description" content="BAW Configuration">
+    <meta itemprop="datePublished" content="October 03, 2018">
+    <meta itemprop="dateModified" content="May 26, 2025">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <!-- <h1 id="page-title" class="page__title" itemprop="headline">BAW Configuration
+</h1> -->
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#baw-configuration">BAW Configuration</a>
+    <ul>
+      <li><a href="#add-a-baw-server">Add a BAW server</a></li>
+      <li><a href="#edit-a-baw-server">Edit a BAW server</a></li>
+      <li><a href="#delete-a-baw-server">Delete a BAW server</a></li>
+      <li><a href="#test-a-baw-server">Test a BAW server</a></li>
+      <li><a href="#add-a-user-to-a-baw-server">Add a user to a BAW server</a></li>
+      <li><a href="#add-a-case-object-store-configuration-to-a-baw-server">Add a Case Object Store configuration to a BAW server</a></li>
+    </ul>
+  </li>
+</ul>
+            </nav>
+          </aside>
+        
+        <h1 id="baw-configuration">BAW Configuration</h1>
+<hr />
+
+<h2 id="add-a-baw-server">Add a BAW server</h2>
+<ol>
+  <li>
+    <p>Click the <strong>Administrator</strong> tab, then switch to the <strong>BAW Configuration</strong> tab to manage the BAW server.</p>
+  </li>
+  <li>
+    <p>Click the <img src="../images/administrator/Administrator_add_icon.png" alt="" /> icon on the right of <strong>BAW Server Configuration</strong> to add a new BAW server.</p>
+  </li>
+  <li>
+    <p>Fill out the form below. Then click the <strong>Create</strong> button. Optional fields are hidden inside the <strong>Auth Configuration</strong> and <strong>SSH Configuration</strong> section. Click <strong>Auth Configuration</strong> or <strong>SSH Configuration</strong> to show them.</p>
+
+    <p><img src="../images/administrator/administrator_bpmserver.png" alt="" width="60%" /></p>
+
+    <p><img src="../images/administrator/administrator_bpmserver_adv.png" alt="" width="60%" /></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Field</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Server Name</td>
+          <td>The display name of this BAW server.</td>
+        </tr>
+        <tr>
+          <td>Type</td>
+          <td>Options: Development, Test, Stage, Production. If the BAW server is Process Center, please select Development. If your server is Process Server, you should choose Test, Stage or Production, depending on your actual environment.</td>
+        </tr>
+        <tr>
+          <td>Server Url</td>
+          <td>The BAW server URL, e.g., https://bawserver:9443. It is the prefix of the BAW Process Admin URL or Process Portal URL. In a BAW HA environment, this field should be the URL of the load balancer.</td>
+        </tr>
+        <tr>
+          <td>REST User Name</td>
+          <td>The name of the user who is a member of the tw_admins or tw_authors group and has the Read permission to the target process application (If you want to catch a new snapshot for this process application in IDA, for example, <strong>Trigger by new Snapshot</strong>, you need to have the Write permission to the process application).</td>
+        </tr>
+        <tr>
+          <td>REST Password</td>
+          <td>The password of the user.</td>
+        </tr>
+        <tr>
+          <td>Auth Command</td>
+          <td>Choose the custom Java command that can automate the custom SSO page of the BAW server <a href="../test/test-write-java-command.html">1</a>.</td>
+        </tr>
+        <tr>
+          <td>Auth Method</td>
+          <td>When the BAW server doesn’t support BASIC Authentication, please set the authentication method to OTHER.</td>
+        </tr>
+        <tr>
+          <td>Connected PS Server</td>
+          <td>The Connected Server Name is the online PS server name. Authorized users can install snapshots of process applications on connected Process Servers. This field only needs to be filled when this server is a Process Server and is connected to the Process Center. It can be obtained from the Process Center under the Servers tab.  <img src="../images/administrator/connected_server_name.png" alt="" />.</td>
+        </tr>
+        <tr>
+          <td>Server Host</td>
+          <td>The BAW server host, the IP or the hostname of the Process Server. It is used for snapshot deployment from PC to PS. In a BAW HA environment, you can get this value from one of the application cluster members.</td>
+        </tr>
+        <tr>
+          <td>SOAP port</td>
+          <td>The SOAP port ID defined in the WebSphere console. To determine the correct port number, see the WebSphere administrative console Ports collection page (click Servers &gt; Server Types &gt; WebSphere application servers &gt; server_name &gt; Communications &gt; Ports and find the value for SOAP_CONNECTOR_ADDRESS). In a BAW HA environment, use the port configured for the application cluster member.</td>
+        </tr>
+        <tr>
+          <td>WAS admin Command</td>
+          <td>It is the path of wsadmin.sh on the Linux server. In a BAW HA environment, use the path of wsadmin.sh in the application cluster member.</td>
+        </tr>
+        <tr>
+          <td>WAS Admin username</td>
+          <td>The name of the WebSphere Administrative user who can log in to the WebSphere console and manage the product resources and user accounts in WebSphere Application Server. In a BAW HA environment, use the WebSphere Admin user configured for the application cluster member.</td>
+        </tr>
+        <tr>
+          <td>WAS Admin password</td>
+          <td>The password of the WebSphere admin user.</td>
+        </tr>
+        <tr>
+          <td>SSH User Name</td>
+          <td>The user who can access PC and PS by SSH key. This field is used for snapshot deployment from PC to PS. This user should have permission to execute wsadmin.sh. In a BAW HA environment, use the SSH user configured for the application cluster member.</td>
+        </tr>
+        <tr>
+          <td>SSH key</td>
+          <td>Used for snapshot deployment from PC to PS. The way to generate an SSH key is here: <a href="../administration/administration-ssh-configuration.html">Link</a>.</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ol>
+
+<p><strong>Notes:</strong>
+If you log in and get a 401 unauthorized error, please check if your function ID belongs to the tw_admins (administrative access) and tw_authors (non-administrative access) groups.</p>
+
+<h2 id="edit-a-baw-server">Edit a BAW server</h2>
+<ol>
+  <li>
+    <p>Click the <strong>Edit</strong> icon on the right of the BAW server that you want to edit.</p>
+
+    <p><img src="../images/administrator/administrator_edit_bpm_server.png" alt="" width="100%" /></p>
+  </li>
+  <li>
+    <p>Change the configurations of the BAW server. Then click <strong>Save</strong>.</p>
+  </li>
+</ol>
+
+<h2 id="delete-a-baw-server">Delete a BAW server</h2>
+<p>Select the servers in the <strong>BAW Configuration</strong> table, then click the <strong>Delete</strong> icon to delete the BAW server.</p>
+
+<p><img src="../images/administrator/administrator_delete_bpm_server.png" alt="" width="100%" /></p>
+
+<h2 id="test-a-baw-server">Test a BAW server</h2>
+<p>Select the <strong>Test Connection</strong> icon on the right of the BAW server that you want to test. If the test connection fails, it will pop up a warning message.</p>
+
+<p><img src="../images/administrator/administrator_test_bpm_server.png" alt="" width="100%" /></p>
+
+<h2 id="add-a-user-to-a-baw-server">Add a user to a BAW server</h2>
+<ol>
+  <li>
+    <p>Click the <strong>Manage BAW User</strong> icon on the right. Then you can see the BAW user list for the server.</p>
+
+    <p><img src="../images/administrator/administrator_edit_bpm_user.png" alt="" width="100%" /></p>
+  </li>
+  <li>
+    <p>Click the <img src="../images/administrator/Administrator_add_icon.png" alt="" /> icon on the right of <strong>BAW User Configuration</strong>. Then fill out the form below to add a new user for the server.</p>
+
+    <p><img src="../images/administrator/administrator_bpmuser.png" alt="" width="60%" /></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Field</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Server</td>
+          <td>The BAW servers that need to add a user</td>
+        </tr>
+        <tr>
+          <td>User Name</td>
+          <td>The username of the BAW server user</td>
+        </tr>
+        <tr>
+          <td>Display Name</td>
+          <td>The display name of the BAW user</td>
+        </tr>
+        <tr>
+          <td>User Password</td>
+          <td>The password of the BAW user</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>After adding the user, you can see the user list for this BAW server.</p>
+
+    <p><img src="../images/administrator/administrator_bpmuserlist.png" alt="" width="100%" /></p>
+  </li>
+  <li>
+    <p>If the permission control of your BAW server is controlled by the UMS server, please add your UMS Admin user to IDA and set it as the UMS Admin user by following these steps:</p>
+
+    <p>a. Add the UMS Admin user following steps one to two.</p>
+
+    <p>b. Set it as the UMS Admin user:</p>
+
+    <p><img src="../images/administrator/administration_set_as_ums_admin_user.png" alt="" width="100%" /></p>
+  </li>
+</ol>
+
+<p><strong>Notes:</strong>
+Please make sure the added user exists in your selected BAW server. Also, you need to well define the <strong>Display name</strong> of the BAW user. You can choose the <strong>Assignee</strong> display name to choose a user for the test case step command.</p>
+
+<p><img src="../images/administrator/administrator_assignee.png" alt="" width="60%" /></p>
+
+<p>Moreover, you can also edit a BAW user in a similar way to editing a user.</p>
+
+<h2 id="add-a-case-object-store-configuration-to-a-baw-server">Add a Case Object Store configuration to a BAW server</h2>
+<ol>
+  <li>
+    <p>Click the <strong>Case Object Store</strong> icon on the right of the BAW server. Then you can see the Case Object Store configuration list for the server.</p>
+
+    <p><img src="../images/administrator/administrator_edit_case_object_store.png" alt="" width="100%" /></p>
+  </li>
+  <li>
+    <p>Click the <img src="../images/administrator/Administrator_add_icon.png" alt="" /> icon on the right of <strong>Case Object Store</strong>. Then fill out the form below to add a Case Object Store configuration for the server.</p>
+
+    <p><img src="../images/administrator/administrator_case_object_store.png" alt="" width="60%" /></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Field</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Server</td>
+          <td>The display name of the BAW server</td>
+        </tr>
+        <tr>
+          <td>Display Name</td>
+          <td>The display name of the Case Object Store configuration</td>
+        </tr>
+        <tr>
+          <td>Design Object Store</td>
+          <td>The case design object store of the BAW server</td>
+        </tr>
+        <tr>
+          <td>Target Object Store</td>
+          <td>The case target object store of the BAW server</td>
+        </tr>
+        <tr>
+          <td>Connection Point</td>
+          <td>The case connection point of the BAW server</td>
+        </tr>
+        <tr>
+          <td>Target Environment Name</td>
+          <td>The case target environment name of the BAW server</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ol>
+
+<p>If the case functions are installed by default, please refer to the default configuration information.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Field</th>
+      <th style="text-align: center">Workflow Center</th>
+      <th style="text-align: center">Workflow Server</th>
+      <th style="text-align: center">Workflow Center(Pak4BA)</th>
+      <th style="text-align: center">Workflow Server(Pak4BA)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Design Object Store</td>
+      <td style="text-align: center">dos</td>
+      <td style="text-align: center">dos</td>
+      <td style="text-align: center">BAWDOS</td>
+      <td style="text-align: center">BAWINS1DOS</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Target Object Store</td>
+      <td style="text-align: center">tos</td>
+      <td style="text-align: center">tos</td>
+      <td style="text-align: center">BAWTOS</td>
+      <td style="text-align: center">BAWINS1TOS</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Connection Point</td>
+      <td style="text-align: center">TOS_Default_ConnPt</td>
+      <td style="text-align: center">TOS_Default_ConnPt</td>
+      <td style="text-align: center">pe_conn_tosuser</td>
+      <td style="text-align: center">pe_conn_tosuser</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Target Environment Name</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">Workflow Default Target Environment</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">Workflow Default Target Environment</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>After adding the Case Object Store, you can see the Case Object Store configuration list for this BAW server.</p>
+
+<p><img src="../images/administrator/administrator_case_object_store_list.png" alt="" width="100%" /></p>
+
+<p><strong>Notes:</strong>
+Please make sure the added Case Object Store configurations exist in your selected BAW server. Also, you need to well define the <strong>Display name</strong> of the Case Object Store. You can choose the <strong>Case Object Store</strong> display name to choose a Case Object Store configuration when you create a test project.</p>
+
+<p><img src="../images/administrator/administrator_case_object_store_project.png" alt="" width="60%" /></p>
+
+<p>Moreover, you can also edit a case object store configuration in a similar way to editing a user.</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="../categories/#administration" class="page__taxonomy-item" rel="tag">administration</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2025-05-26">May 26, 2025</time></p>
+        
+      </footer>
+
+      
+
+      
+<nav class="pagination">
+  <div class="previous">
+    <div class="container">
+      
+      <a href="../administration/administration-role-management.html" class="pagination--pager"
+        title="Role Management
+">Previous
+        <h2 class="titlePreview">Role Management
+        </h2>
+      </a>
+      
+    </div>
+  </div>
+  <div class="next">
+    <div class="container">
+      
+      <a href="../administration/administration-ssh-configuration.html" class="pagination--pager"
+        title="SSH Configuration
+">Next
+        <h2 class="titlePreview">SSH Configuration
+        </h2>
+      </a>
+      
+    </div>
+  </div>
+</nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<!-- Documentation for <a href="https://sdc-china.github.io/IDA-doc/">IBM Deployment Accelerator for Business Automation Workflow (IDA) Docs</a>  Last update: 2026-08-21 10:36. -->
+<!-- end custom footer snippets -->
+
+        <div class="page__footer-copyright">&copy; 2026 IBM Deployment Accelerator for Business Automation Workflow (IDA) Docs. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>. Last update: 2026-08-21 10:36</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="../assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+<script src="../assets/js/lunr/lunr.min.js"></script>
+<script src="../assets/js/lunr/lunr-store.js"></script>
+<script src="../assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+  </body>
+</html>
