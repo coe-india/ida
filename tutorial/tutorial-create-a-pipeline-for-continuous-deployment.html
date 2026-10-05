@@ -9,19 +9,19 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Task 4: Create a Pipeline for Continuous Deployment - IBM Deployment Accelerator for Business Automation Workflow (IDA) Docs</title>
-<meta name="description" content="Task 4: Create a Pipeline for Continuous Deployment">
+<!-- begin _includes/seo.html --><title>Task 4: Create a Pipeline for Continuous Deployment and Configure Webhook - IBM Deployment Accelerator for Business Automation Workflow (IDA) Docs</title>
+<meta name="description" content="Task 4: Create a Pipeline for Continuous Deployment and Configure Webhook">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="IBM Deployment Accelerator for Business Automation Workflow (IDA) Docs">
-<meta property="og:title" content="Task 4: Create a Pipeline for Continuous Deployment">
+<meta property="og:title" content="Task 4: Create a Pipeline for Continuous Deployment and Configure Webhook">
 <meta property="og:url" content="../tutorial/tutorial-create-a-pipeline-for-continuous-deployment.html">
 
 
-  <meta property="og:description" content="Task 4: Create a Pipeline for Continuous Deployment">
+  <meta property="og:description" content="Task 4: Create a Pipeline for Continuous Deployment and Configure Webhook">
 
 
 
@@ -33,7 +33,7 @@
 
 
 
-  <meta property="article:modified_time" content="2019-07-27T00:14:00+08:00">
+  <meta property="article:modified_time" content="2026-07-30T00:14:00+08:00">
 
 
 
@@ -251,7 +251,7 @@
             
             
 
-            <li><a href="../tutorial/tutorial-create-a-pipeline-for-continuous-deployment.html" class="active">Task 4: Create a Pipeline for Continuous Deployment</a></li>
+            <li><a href="../tutorial/tutorial-create-a-pipeline-for-continuous-deployment.html" class="active">Task 4: Create a Pipeline for Continuous Deployment and Configure Webhook</a></li>
           
             
             
@@ -889,15 +889,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Task 4: Create a Pipeline for Continuous Deployment">
-    <meta itemprop="description" content="Task 4: Create a Pipeline for Continuous Deployment">
+    <meta itemprop="headline" content="Task 4: Create a Pipeline for Continuous Deployment and Configure Webhook">
+    <meta itemprop="description" content="Task 4: Create a Pipeline for Continuous Deployment and Configure Webhook">
     <meta itemprop="datePublished" content="February 07, 2018">
-    <meta itemprop="dateModified" content="July 26, 2019">
+    <meta itemprop="dateModified" content="July 30, 2026">
 
     <div class="page__inner-wrap">
       
         <header>
-          <!-- <h1 id="page-title" class="page__title" itemprop="headline">Task 4: Create a Pipeline for Continuous Deployment
+          <!-- <h1 id="page-title" class="page__title" itemprop="headline">Task 4: Create a Pipeline for Continuous Deployment and Configure Webhook
 </h1> -->
           
         </header>
@@ -909,7 +909,7 @@
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
               <ul class="toc__menu">
-  <li><a href="#task-4-create-a-pipeline-for-continuous-deployment">Task 4: Create a Pipeline for Continuous Deployment</a>
+  <li><a href="#task-4-create-a-pipeline-for-continuous-deployment-and-configure-webhook">Task 4: Create a Pipeline for Continuous Deployment and Configure Webhook</a>
     <ul>
       <li><a href="#about-this-task">About this task</a></li>
       <li><a href="#step-1-create-a-pipeline">Step 1: Create a pipeline</a>
@@ -917,7 +917,12 @@
           <li><a href="#procedure">Procedure</a></li>
         </ul>
       </li>
-      <li><a href="#step-2-run-the-pipeline">Step 2: Run the pipeline</a>
+      <li><a href="#step-2-configure-the-webhook-baw-push-to-git">Step 2: Configure the Webhook (BAW Push to Git)</a>
+        <ul>
+          <li><a href="#procedure-2">Procedure</a></li>
+        </ul>
+      </li>
+      <li><a href="#step-3-run-the-pipeline">Step 3: Run the pipeline</a>
         <ul>
           <li><a href="#procedure-1">Procedure</a></li>
         </ul>
@@ -928,10 +933,10 @@
             </nav>
           </aside>
         
-        <h1 id="task-4-create-a-pipeline-for-continuous-deployment">Task 4: Create a Pipeline for Continuous Deployment</h1>
+        <h1 id="task-4-create-a-pipeline-for-continuous-deployment-and-configure-webhook">Task 4: Create a Pipeline for Continuous Deployment and Configure Webhook</h1>
 <hr />
 
-<p>IDA provides a built-in continuous integration and deployment pipeline to orchestrate testing, checkstyle, snapshot taking, and deployment.</p>
+<p>IDA provides a built-in continuous integration and deployment pipeline to orchestrate testing, checkstyle, snapshot taking, and deployment. Starting from <strong>v26.0.10</strong>, each saved pipeline also exposes a <strong>Webhook (BAW Push to Git)</strong> section so that BAW can automatically trigger a pipeline build every time a snapshot is pushed to Git.</p>
 
 <h2 id="about-this-task">About this task</h2>
 <p>Before you start, make sure you have set up the test project.</p>
@@ -1018,7 +1023,44 @@
   </li>
 </ol>
 
-<h2 id="step-2-run-the-pipeline">Step 2: Run the pipeline</h2>
+<h2 id="step-2-configure-the-webhook-baw-push-to-git">Step 2: Configure the Webhook (BAW Push to Git)</h2>
+
+<p>After saving the pipeline, you can configure the Webhook integration so that BAW automatically triggers a new pipeline build every time a snapshot is pushed to Git.</p>
+
+<blockquote>
+  <p><strong>Note:</strong> The Webhook section is not visible during initial pipeline creation. It only appears on the Edit page after the pipeline has been saved for the first time.</p>
+</blockquote>
+
+<h3 id="procedure-2">Procedure</h3>
+<ol>
+  <li>
+    <p>On the pipeline list page, click the <strong>Edit</strong> button for the pipeline you just created.</p>
+  </li>
+  <li>
+    <p>On the Edit page, expand the <strong>Webhook (BAW Push to Git)</strong> section. You will see a <strong>Webhook URL</strong> and a <strong>Secret Token</strong>.</p>
+
+    <p><img src="../images/pipeline/Edit-Webhook.png" alt="Pipeline edit page showing Webhook section expanded with Webhook URL, Secret Token and Regenerate button" width="100%" /></p>
+  </li>
+  <li>
+    <p>Copy the <strong>Webhook URL</strong> and the <strong>Secret Token</strong>.</p>
+  </li>
+  <li>
+    <p>In BAW Studio, open your Process App and go to <strong>Process App Settings &gt; Push to Git &gt; Webhook</strong>.</p>
+    <ul>
+      <li>Paste the Webhook URL into the <strong>Payload URL</strong> field.</li>
+      <li>Paste the Secret Token into the <strong>Secret</strong> field.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Save the BAW webhook configuration. From this point, every time BAW pushes a snapshot to Git, BAW sends a signed HTTP POST to IDA. IDA verifies the HMAC signature and <strong>automatically triggers a new pipeline build</strong> for this pipeline.</p>
+  </li>
+</ol>
+
+<blockquote>
+  <p><strong>Tip:</strong> If you regenerate the Secret Token, you must update the <strong>Secret</strong> field in the BAW webhook configuration to match the new value — otherwise incoming webhook calls will be rejected. The Webhook trigger works alongside the existing <em>Trigger by New Snapshot</em> option. Both can be active at the same time.</p>
+</blockquote>
+
+<h2 id="step-3-run-the-pipeline">Step 3: Run the pipeline</h2>
 
 <p>Now you can run the pipeline.</p>
 
@@ -1134,7 +1176,7 @@
     <div id="footer" class="page__footer">
       <footer>
         <!-- start custom footer snippets -->
-<!-- Documentation for <a href="https://sdc-china.github.io/IDA-doc/">IBM Deployment Accelerator for Business Automation Workflow (IDA) Docs</a>  Last update: 2026-08-21 10:36. -->
+<!-- Documentation for <a href="https://sdc-india.github.io/IDA-doc/">IBM Deployment Accelerator for Business Automation Workflow (IDA) Docs</a>  Last update: 2026-08-21 10:36. -->
 <!-- end custom footer snippets -->
 
         <div class="page__footer-copyright">&copy; 2026 IBM Deployment Accelerator for Business Automation Workflow (IDA) Docs. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>. Last update: 2026-08-21 10:36</div>
